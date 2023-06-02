@@ -89,6 +89,7 @@ main {
     padding: 24px 140px 24px 140px;
     font-weight: 700;
     color: var(--light-lavender);
+    white-space: nowrap;
 }
 
 .result-bottom {
@@ -239,7 +240,33 @@ main {
 
 @media (min-width: 400px) {
     body {
-       
+        display: flex;
+        align-items: center;
     }
-     
+    main {
+        /* width: 46rem; */
+        max-width: 46rem;
+        margin: 0 auto;
+        
+    }
+    .container{
+       display: flex;
+       /* flex-direction: row; */
+       /* align-items: center; */
+    }
+    .result-wrapper, .summary-wrapper {
+        flex: 1;
+    }
+    .result-wrapper {
+        border-radius: 32px;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .result-bottom p{
+        max-width: 14rem;
+        margin-top: 24px;
+    }
 }
