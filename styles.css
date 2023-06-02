@@ -244,15 +244,13 @@ main {
         align-items: center;
     }
     main {
-        /* width: 46rem; */
         max-width: 46rem;
         margin: 0 auto;
-        
+        border-radius: 0 32px 32px 0;
+        box-shadow: 2px 1px 1px rgb(0, 0, 0, 0.1);
     }
     .container{
        display: flex;
-       /* flex-direction: row; */
-       /* align-items: center; */
     }
     .result-wrapper, .summary-wrapper {
         flex: 1;
@@ -284,6 +282,10 @@ main {
     }
     .summary-wrapper .button {
         max-width: 288px;   
+    }
+
+    .summary-wrapper .button:hover {
+        background: linear-gradient(var(--light-slate-blue-background),var(--light-royal-blue-background));
     }
 
 }

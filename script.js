@@ -7,7 +7,7 @@ const getData = async() => {
         const summaryListItem = document.createElement("div");
         summaryListItem.innerHTML = `
                 <div class="summary-left">
-                    <img src='${item.icon}'>
+                    <img src='${item.icon}' alt="icon for ${item.category}">
                     <h4>${item.category}</h4>
                 </div> 
                 <div class="summary-right">
