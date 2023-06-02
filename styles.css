@@ -269,4 +269,21 @@ main {
         max-width: 14rem;
         margin-top: 24px;
     }
+
+    .summary-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .summary-list {
+        max-width: 288px;
+    }
+    .summary-wrapper {
+        padding: 0px 40px;
+    }
+    .summary-wrapper .button {
+        max-width: 288px;   
+    }
+
 }

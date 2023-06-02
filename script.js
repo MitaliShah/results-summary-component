@@ -3,8 +3,7 @@ const summaryEl = document.getElementById("summary-list");
 const getData = async() => {
     const response = await fetch(`./data.json`)
     const data = await response.json()
-    data.forEach((item, index) => {
-        // console.log(item,index)
+    data.forEach((item) => {
         const summaryListItem = document.createElement("div");
         summaryListItem.innerHTML = `
                 <div class="summary-left">
