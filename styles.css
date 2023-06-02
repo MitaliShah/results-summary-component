@@ -59,13 +59,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Hanken Grotesk', sans-serif;
-    min-height: 100vh;    
+    min-height: 100vh;
 }
 
 /** MAIN  **/
 main {
     max-width: 24rem;
     margin: 0 auto;
+    box-shadow: 1px 0px 5px 1px rgb(0, 0, 0, 0.2);
 }
 
 /** RESULT SECTION**/
@@ -161,26 +162,63 @@ main {
 }
 
 .summary-item {
+    background-color: aqua;
     height: 56px;
-}
-
-.summary-icon-category {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 17px 16px;
+    border-radius: 12px;
 }
 
 .summary-left {
-    display: flex;
+   display: flex;
 }
 
+.summary-item:not(:last-of-type) {
+    margin-bottom: 15px;
+}
 
+.summary-left img {
+    padding: 0;
+    margin: 0;
+}
 
+.summary-left h4 {
+    font-size: 16px;
+    margin-left: 8px;
+}
 
+.summary-right p {
+    color: #303B59;
+    font-weight: 700;
+    font-size: 16px;
+}
 
+.summary-right span{
+    color: #303B59;
+    opacity: 0.5;
+}
 
+.summary-item:nth-of-type(1) {
+    color: var(--light-red);
+    background-color: hsl(0, 100%, 67%, 0.05);
+}
 
+.summary-item:nth-of-type(2)  {
+    color: var(--orangey-yellow);
+    background-color: hsl(39, 100%, 56%, 0.05);
+}
 
+.summary-item:nth-of-type(3)  {
+    color: var(--green-teal);
+    background-color: hsl(166, 100%, 37%, 0.05);
+}
 
+.summary-item:nth-of-type(4)  {
+    color: var(--cobalt-blue);
+    background-color: hsl(234, 85%, 45%, 0.05);
+}
 
 /** FOOTER **/
 .attribution {
@@ -197,4 +235,11 @@ main {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 400px) {
+    body {
+       
+    }
+     
 }
