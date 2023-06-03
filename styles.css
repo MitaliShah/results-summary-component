@@ -237,7 +237,6 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: hsl(212, 45%, 89%);
     color: black;
     text-align: center;
     font-size: 0.688rem;
@@ -250,10 +249,11 @@ body {
 
 @media(min-width: 37.5rem) {
     body {
-        background-color: aqua;
+        background-color: #FCE9F1;
     }
 
     .container {
+        max-width: 46rem;
         display: flex;
         flex-direction: row;
     }
