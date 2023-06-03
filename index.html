@@ -14,27 +14,29 @@
 </head>
 <body>
 <main>
-  <section class="container">
-    <div class="result-wrapper">
-      <h3>Your Result</h3>
+  <!-- container class to wrap result and summary cards-->
+  <div class="container">
+
+    <div class="result-container">
+      <h1 class="result-primary-title">Your Result</h1>
       <div class="score-circle">
-        <h1>76</h1>
-        <p>of 100</p>
+        <span class="score-count">76</span>
+        <span class="score-total">of 100</span>
       </div>
       <div class="result-bottom">
-        <h2>Great</h2>
-        <p>Your performance exceed 65% of the people conducting the test here!</p>
+        <h2 class="result-secondary-title">Great</h2>
+        <p class="result-info">Your performance exceed 65% of the people conducting the test here!</p>
       </div>  
     </div> 
 
-    <div class="summary-wrapper">
-      <h3>Summary</h3>
-      <div class="summary-list" id="summary-list">
-
-      </div>
-      <button class="button">Continue</button>
+    <div class="summary-container">
+      <h2 class="summary-title">Summary</h2>
+      <ul class="summary-list" id="summary-list">
+        <!--This is where I'll append the list items-->
+      </ul>
+      <button class="continue-button">Continue</button>
     </div>
-  </section>
+  </div>    
 </main>
   <footer>
     <div class="attribution">

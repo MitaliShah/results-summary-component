@@ -4,14 +4,14 @@ const getData = async() => {
     const response = await fetch(`./data.json`)
     const data = await response.json()
     data.forEach((item) => {
-        const summaryListItem = document.createElement("div");
-        summaryListItem.innerHTML = `
+        const summaryListItem = document.createElement("li");
+        summaryListItem.innerHTML = `       
                 <div class="summary-left">
-                    <img src='${item.icon}' alt="icon for ${item.category}">
-                    <h4>${item.category}</h4>
+                    <img class="icon" src='${item.icon}' alt="">
+                    <h4 class="item-category-name">${item.category}</h4>
                 </div> 
                 <div class="summary-right">
-                    <p>${item.score}<span> / 100</span></p>
+                    <p class="item-score">${item.score}<span class="slash-hundred"> / 100</span></p>
                 </div>`
                 
             summaryListItem.classList.add('summary-item')
