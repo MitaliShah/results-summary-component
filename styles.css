@@ -306,6 +306,11 @@ body {
     .continue-button {
         padding: 1rem 6.625rem;
     }
+
+    .continue-button:hover {
+        background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    }
+
     .item-category-name {
         font-size: 1.125rem;
     }
